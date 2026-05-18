@@ -30,6 +30,10 @@ install.packages(c("tidyverse", "rstan", "reshape", "scales", "gridExtra"))
 - **Stata** (version 15+; tested with Stata 19 BE)
 - Required for reproducing the Vector Autoregressive (VAR) analysis in Section 4.1
 
+### Mathematica (for figures)
+- **Mathematica** (version 14+; tested with Mathematica 14.2)
+- Required for producing all figure elements. Excludes maps in Fig. 3B and 6A.
+
 ### System Requirements
 - Estimated runtime: 7-15 minutes for full R reproduction
 - RAM: 4GB minimum recommended
