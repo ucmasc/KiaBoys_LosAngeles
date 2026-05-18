@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+._*
+
+# Claude Code
+.claude/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Stan compiled models
+*.rds
+
+# Stata logs (generated during runs)
+*.log
+
+# PDF of paper (if not intended for distribution)
+# KiaBoys_IJF_FinalUpdated.pdf
+
+# Mathematica notebook (per user instruction)
+IJF_Mathematica_Master_V2.nb
+
+# Temporary files
+*~
+\#*\#
+
+# Model output can be regenerated
+# Uncomment if you want to exclude:
+# model_output/
