@@ -2,6 +2,8 @@
 
 Brantingham, P.J., Uchida, C.D., Morstatter, F., and Mohler, G. (2026).
 
+May 18, 2026
+
 ## Overview
 
 This repository contains data and code to reproduce the analyses in the paper. The study examines the surge in Hyundai Sonata thefts in Los Angeles in relation to the 'Kia Boys' social media trend and uses mechanistic models to forecast theft patterns through 2050.
@@ -184,9 +186,9 @@ Expected key results:
 - Sonata thefts Granger-cause US 'Kia Boys' searches (χ² = 10.748, p = 0.013)
 - US 'Kia Boys' searches do NOT Granger-cause Sonata thefts (χ² = 2.747, p = 0.432)
 
-## Figure Rendering - Mathematica Required
+## Figure Rendering - Mathematica 14+ Required
 
-All figures were rendered in Mathematica. A Mathematica notebook file is provided to reproduce versions of the figures.
+All figures were rendered in Mathematica 14.2. A Mathematica notebook file is provided to reproduce versions all figures using data contained herein.
 
 ## Output Files
 
