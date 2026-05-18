@@ -170,6 +170,9 @@ The Vector Autoregressive (VAR) analysis requires Stata:
 cd "path/to/this/repository"
 do VAR-Sonata-Kiaboys-8-2-25.do
 ```
+### Figure Rendering - Mathematica Required
+
+All figures were rendered in Mathematica. A Mathematica notebook file is provided to reproduce versions of the figures.
 
 **Note:** Edit line 5 of the do-file to set your working directory path.
 
@@ -217,6 +220,7 @@ The code was tested with:
 - rstan 2.32.7 (Stan 2.32.2)
 - tidyverse 2.0.0
 - Stata 19 BE
+- Mathematica 14.2
 
 ### Random Seed
 All Stan sampling uses `seed = 42` for reproducibility. Results may vary slightly across different rstan/Stan versions.
@@ -227,7 +231,7 @@ All Stan sampling uses `seed = 42` for reproducibility. Results may vary slightl
 @article{brantingham2026forecasting,
   title={Forecasting the impact of the viral '{K}ia {B}oys' social media trend on car thefts to 2050},
   author={Brantingham, P. Jeffrey and Uchida, Craig D. and Morstatter, Fred and Mohler, George},
-  journal={International Journal of Forecasting},
+  journal={TBA},
   year={2026}
 }
 ```
