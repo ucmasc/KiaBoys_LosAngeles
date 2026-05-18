@@ -170,10 +170,6 @@ The Vector Autoregressive (VAR) analysis requires Stata:
 cd "path/to/this/repository"
 do VAR-Sonata-Kiaboys-8-2-25.do
 ```
-### Figure Rendering - Mathematica Required
-
-All figures were rendered in Mathematica. A Mathematica notebook file is provided to reproduce versions of the figures.
-
 **Note:** Edit line 5 of the do-file to set your working directory path.
 
 The script performs:
@@ -187,6 +183,10 @@ The script performs:
 Expected key results:
 - Sonata thefts Granger-cause US 'Kia Boys' searches (χ² = 10.748, p = 0.013)
 - US 'Kia Boys' searches do NOT Granger-cause Sonata thefts (χ² = 2.747, p = 0.432)
+
+## Figure Rendering - Mathematica Required
+
+All figures were rendered in Mathematica. A Mathematica notebook file is provided to reproduce versions of the figures.
 
 ## Output Files
 
