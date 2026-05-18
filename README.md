@@ -8,6 +8,8 @@ May 18, 2026
 
 This repository contains data and code to reproduce the analyses in the paper. The study examines the surge in Hyundai Sonata thefts in Los Angeles in relation to the 'Kia Boys' social media trend and uses mechanistic models to forecast theft patterns through 2050.
 
+All data to reproduce the analyses are contained in the \data folder. Output files from analyses are saved in the \model_output folder. Reproducing the analyses requires R (model fitting, forecasts), Stata (VAR Analysis). Reproducing the figures requires Mathematica.  
+
 ## Requirements
 
 ### R Environment
@@ -188,7 +190,7 @@ Expected key results:
 
 ## Figure Rendering - Mathematica 14+ Required
 
-All figures were rendered in Mathematica 14.2. A Mathematica notebook file is provided to reproduce versions all figures using data contained herein.
+All figures were rendered in Mathematica 14.2. A Mathematica notebook file is provided to reproduce all figure elements using data contained in the \data folder.
 
 ## Output Files
 
