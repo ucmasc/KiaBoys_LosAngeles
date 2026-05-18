@@ -17,9 +17,6 @@
 # Stata logs (generated during runs)
 *.log
 
-# PDF of paper (if not intended for distribution)
-# KiaBoys_IJF_FinalUpdated.pdf
-
 # Mathematica notebook (per user instruction)
 IJF_Mathematica_Master_V2.nb
 
