@@ -1,6 +1,6 @@
 # Replication Code for "Forecasting the impact of the viral 'Kia Boys' social media trend on car thefts to 2050"
 
-Brantingham, P.J., Uchida, C.D., Morstatter, F., and Mohler, G. (2026). *International Journal of Forecasting*.
+Brantingham, P.J., Uchida, C.D., Morstatter, F., and Mohler, G. (2026).
 
 ## Overview
 
