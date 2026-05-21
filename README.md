@@ -37,7 +37,6 @@ install.packages(c("tidyverse", "rstan", "reshape", "scales", "gridExtra"))
 ### System Requirements
 - Estimated runtime: 7-15 minutes for full R reproduction
 - RAM: 4GB minimum recommended
-- All Stan sampling uses `seed = 42` for reproducibility
 
 ## Directory Structure
 
@@ -214,14 +213,6 @@ All figures were rendered in Mathematica 14.2. A Mathematica notebook file is pr
 
 ## Notes on Reproducibility
 
-### Stan Warnings
-During MCMC sampling, Stan may report warnings about:
-- Divergent transitions (typically 10-15)
-- Low effective sample size (ESS)
-- R-hat values
-
-These warnings are expected and do not affect the core results. The models converge adequately for the paper's findings. For improved convergence, increase `iter` or use multiple chains.
-
 ### Package Versions
 The code was tested with:
 - R 4.5.0
@@ -229,9 +220,6 @@ The code was tested with:
 - tidyverse 2.0.0
 - Stata 19 BE
 - Mathematica 14.2
-
-### Random Seed
-All Stan sampling uses `seed = 42` for reproducibility. Results may vary slightly across different rstan/Stan versions.
 
 ## Citation
 
@@ -243,10 +231,6 @@ All Stan sampling uses `seed = 42` for reproducibility. Results may vary slightl
   year={2026}
 }
 ```
-
-## License
-
-[Add appropriate license]
 
 ## Contact
 
