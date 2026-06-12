@@ -210,7 +210,7 @@ Expected key results:
 
 ## Figure Rendering - Mathematica 14+ Required
 
-A Mathematica 14.2 notebook file is provided to reproduce the figure elements in the paper using the data contained in the \data folder. Printed versions of Figures 3A and 8A were produced in MS Excel, which provides greater flexibility over multi-axis presentations. The 3A and 8A figure elements generated in the Mathematica notebook are numerically identical. Figure layout and labeling was done in MS PowerPoint. The Mathematical figure elements lack some of this labeling. Maps in Figures 3B and 8A were made in QGIS and are not reproduced here.  
+A Mathematica 14.2 notebook file is provided to reproduce the figure elements in the paper using the data contained in the \data folder. Printed versions of Figures 3A and 8A were produced in MS Excel, which provides greater flexibility over multi-axis presentations. The 3A and 8A figure elements generated in the Mathematica notebook are numerically identical. Figure layout and labeling was done in MS PowerPoint. The Mathematica figure elements lack some of this labeling. Maps in Figures 3B and 8A were made in QGIS and are not reproduced here.
 
 
 ## Output Files
