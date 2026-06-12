@@ -8,7 +8,11 @@ May 18, 2026
 
 This repository contains data and code to reproduce the analyses in the paper. The study examines the surge in Hyundai Sonata thefts in Los Angeles in relation to the 'Kia Boys' social media trend and uses mechanistic models to forecast theft patterns through 2050.
 
-All data to reproduce the analyses are contained in the \data folder. Output files from analyses are saved in the \model_output folder. Reproducing the analyses requires R (model fitting, forecasts), Stata (VAR Analysis). Reproducing the figures requires Mathematica.  
+All data to reproduce the analyses are contained in the \data folder. Output files from analyses are saved in the \model_output folder. Reproducing the analyses requires R (model fitting, forecasts), Stata (VAR Analysis). Reproducing the figures requires Mathematica.
+
+Note that R model estimates are posterior summaries produced by Hamiltonian Monte Carlo sampling (Stan, via rstan), not closed-form quantities. Stan does not guarantee bit-for-bit identical results across different operating systems, compilers, or hardware, even with a fixed random seed. As the Stan Reference Manual states, “Floating point operations on modern computers are notoriously difficult to replicate.” Exact reproducibility holds only when the “Stan version … operating system version … computer hardware … [and] C++ compiler, including version, compiler flags, and linked libraries” are all identical. That is, replicates on the same machine will are identical, whereas replicates on different machines will produce slight different results the differences between-machines are of similar magnitude to changing random seeds within-machines. These differences do not substantively change interpretation of results.
+
+See: https://mc-stan.org/docs/reference-manual/reproducibility.html for more information on reproducibiity with STAN.
 
 ## Requirements
 
@@ -138,7 +142,7 @@ Rscript sonata_constant.R # constant model (7 parameters)
 Rscript sonata_sales.R    # sales-data model (9 parameters)
 ```
 
-Expected output (approximate):
+Expected output (approximate given floating point variation):
 | Model | Log-Likelihood | AIC |
 |-------|----------------|-----|
 | power | 22076.74 | -44137.48 |
@@ -154,6 +158,19 @@ Rscript civic.R    # Civic MASE
 Rscript camry.R    # Camry MASE
 Rscript optima.R   # Optima MASE
 ```
+Expected output (approximate given floating point variation):
+| lag k | Sonata | Civic | Camry | Optima |
+|-------|--------|-------|-------|--------|
+| 1 | 1.03 | 2.22 | 1.97 | 1.67 |
+| 2 | 0.64 | 1.59 | 1.18 | 1.21 |
+| 3 | 0.51 | 1.26 | 0.83 | 0.96 |
+| 4 | 0.48 | 1.09 | 0.63 | 0.93 |
+| 5 | 0.47 | 0.94 | 0.49 | 0.91 |
+| 6 | 0.46 | 0.84 | 0.39 | 0.89 |
+| 7 | 0.45 | 0.79 | 0.32 | 0.86 |
+| 8 | 0.44 | 0.73 | 0.27 | 0.84 |
+| 9 | 0.43 | 0.72 | 0.24 | 0.83 |
+| 10 | 0.42 | 0.67 | 0.21 | 0.82 |
 
 #### Appendix D: Kia Optima Forecast (Figure 9)
 ```bash
